@@ -11,3 +11,9 @@ Team Members
 | Sheraz Saeed | A | 218867028 | sheraz8@my.yorku.ca | Discord | sheraz__saeed |
 
 | Sam Lee | A | 219775949 | samjlee@my.yorku.ca | Discord | tdlp |
+
+| Full Name   | Section | Student ID | Email | Best Way to Contact | Discord Username |
+|-------------|---------|------------|-------|---------------------|------------------|
+| Brandon Ngo |         |            |       |                     |                  |
+|             |         |            |       |                     |                  |
+|             |         |            |       |                     |                  |
