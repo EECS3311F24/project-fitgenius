@@ -1,5 +1,4 @@
-
-import { HashRouter as Router, Route,Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Navbar from './Navbar';
 import Recommended from './Recommended';
@@ -8,10 +7,7 @@ import ChestgPage from './ChestPage';
 import ArmPage from './ArmPage';
 import BackPage from './BackPage';
 
-
 function App() {
-
-
   return (
     <div>
       <Router>
