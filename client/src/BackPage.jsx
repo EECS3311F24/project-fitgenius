@@ -1,18 +1,30 @@
+import { useNavigate } from 'react-router-dom';
 
-function BackPage(){
+function BackPage() {
+    const navigate = useNavigate();
+
     return(
-        <div >
+        <div>
             <h1 className="BackName">Back</h1>
             <ul className="BackList">
-                <li>Row</li>
-                <li>Deadlife</li>
-                <li>Seated Cable Rows</li>
-                <li>Dumbell Row</li>
-                <li>Plank Arm Lifts</li>
+                <li>
+                    <button onClick={() => navigate("row")}>Row</button>
+                </li>
+                <li>
+                    <button onClick={() => navigate("deadlift")}>Deadlift</button>
+                </li>
+                <li>
+                    <button onClick={() => navigate("seated-cable-rows")}>Seated Cable Rows</button>
+                </li>
+                <li>
+                    <button onClick={() => navigate("dumbell-row")}>Dumbell Row</button>
+                </li>
+                <li>
+                    <button onClick={() => navigate("plank-arm-lifts")}>Plank Arm Lifts</button>
+                </li>
             </ul>
-
         </div>
     )
-
 }
+
 export default BackPage;

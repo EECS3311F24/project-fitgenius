@@ -1,8 +1,8 @@
-import Leg from './Leg.jpeg'
+import Leg from './pictures/Leg.jpeg'
 import {Link} from 'react-router-dom'
-import Chest from './Chest.jpeg'
-import Arm from './Arm.jpeg'
-import Back from './Back.jpeg'
+import Chest from './pictures/Chest.jpeg'
+import Arm from './pictures/Arm.jpeg'
+import Back from './pictures/Back.jpeg'
 
 function Recommended(){
     return (
