@@ -1,18 +1,27 @@
+import { useNavigate } from 'react-router-dom';
 
-function ArmPage(){
+function ArmPage() {
+    const navigate = useNavigate();
+
     return(
-        <div >
+        <div>
             <h1 className="ArmName">Arm</h1>
             <ul className="ArmList">
-                <li>Hammer Curl</li>
-                <li>Bicep Curl</li>
-                <li>Tricep Dips</li>
-                <li>Overhead Tricep Extension</li>
-
+                <li>
+                    <button onClick={() => navigate("hammer-curl")}>Hammer Curl</button>
+                </li>
+                <li>
+                    <button onClick={() => navigate("bicep-curl")}>Bicep Curl</button>
+                </li>
+                <li>
+                    <button onClick={() => navigate("tricep-dips")}>Tricep Dips</button>
+                </li>
+                <li>
+                    <button onClick={() => navigate("overhead-tricep-extension")}>Overhead Tricep Extension</button>
+                </li>
             </ul>
-
         </div>
     )
-
 }
+
 export default ArmPage;
