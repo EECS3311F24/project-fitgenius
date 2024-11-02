@@ -1,8 +1,8 @@
 # Product Backlog (PB.md)
 
 ## User Story 1:
-- **As a user**, I want to receive personalized exercise recommendations based on my goals, so that I can follow a workout routine tailored to my needs.
-- **Criteria of satisfaction:** When the app suggests exercises based on muscle groups or fitness goals, and the recommendations adapt to the user’s input.
+- **As a user**, I want to receive personalized exercise recommendations , so that I can follow a workout routine tailored to my needs.
+- **Criteria of satisfaction:** When the app suggests exercises based on muscle groups or fitness goals.
 
 ## User Story 2:
 - **As a user**, I want to create and customize my own workout routine so that I can have flexibility in how I train.
