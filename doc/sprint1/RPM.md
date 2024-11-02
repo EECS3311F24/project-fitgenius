@@ -1,4 +1,4 @@
-# Release Planning Meeting Document (RPM.md)
+# Release Planning Meeting Document
 Date: October 24, 2024
 
 ## Participants:
