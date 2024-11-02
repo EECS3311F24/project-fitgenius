@@ -1,5 +1,6 @@
 import React from "react";
 import benchPressGif from "../assets/Push-Up-Plus.gif"; // Adjust the path if needed
+import TimerWidget from "../timer/TimerWidget";
 
 const PushUps = () => {
   return (
@@ -34,6 +35,7 @@ const PushUps = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

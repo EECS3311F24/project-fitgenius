@@ -1,5 +1,6 @@
 import React from "react";
 import dumbellRowGif from "../assets/Dumbell_Row.gif";
+import TimerWidget from "../timer/TimerWidget";
 
 const DumbellRow = () => {
   return (
@@ -34,6 +35,7 @@ const DumbellRow = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

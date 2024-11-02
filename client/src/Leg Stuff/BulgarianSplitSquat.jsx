@@ -1,5 +1,6 @@
 import React from "react";
 import benchPressGif from "../assets/b57f76fb76b2f768f1e4bcdf18c2bfce.gif";
+import TimerWidget from "../timer/TimerWidget";
 
 const BulgarianSplitSquat = () => {
   return (
@@ -34,6 +35,7 @@ const BulgarianSplitSquat = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

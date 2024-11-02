@@ -1,5 +1,6 @@
 import React from "react";
 import overheadTricepExtensionGif from "../assets/OVER_TRI_EXT.gif";
+import TimerWidget from "../timer/TimerWidget";
 
 const OverheadTricepExtension = () => {
   return (
@@ -34,6 +35,7 @@ const OverheadTricepExtension = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

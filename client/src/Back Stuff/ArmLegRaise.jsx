@@ -1,5 +1,6 @@
 import React from "react";
 import armLegRaiseGif from "../assets/Arm-Leg-Raise.gif";
+import TimerWidget from "../timer/TimerWidget";
 
 const ArmLegRaise = () => {
   return (
@@ -34,6 +35,7 @@ const ArmLegRaise = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };
