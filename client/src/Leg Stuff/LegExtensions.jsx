@@ -1,5 +1,6 @@
 import React from "react";
 import benchPressGif from "../assets/legExt.gif";
+import TimerWidget from "../timer/TimerWidget";
 
 const LegExtensions = () => {
   return (
@@ -34,6 +35,7 @@ const LegExtensions = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

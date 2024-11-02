@@ -1,5 +1,6 @@
 import React from "react";
 import deadLiftGif from "../assets/Dead_Lift.gif";
+import TimerWidget from "../timer/TimerWidget";
 
 const DeadLift = () => {
   return (
@@ -34,6 +35,7 @@ const DeadLift = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

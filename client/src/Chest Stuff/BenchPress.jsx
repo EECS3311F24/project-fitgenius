@@ -1,5 +1,6 @@
 import React from "react";
 import benchPressGif from "../assets/BENCH_PRESS.gif";
+import TimerWidget from "../timer/TimerWidget";
 
 const BenchPress = () => {
   return (
@@ -34,6 +35,7 @@ const BenchPress = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

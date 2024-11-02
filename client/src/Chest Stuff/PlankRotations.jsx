@@ -1,5 +1,6 @@
 import React from "react";
 import benchPressGif from "../assets/fa4932a8865f085e6240101fa9a11447.gif"; // Adjust the path if needed
+import TimerWidget from "../timer/TimerWidget";
 
 const PlankRotations = () => {
   return (
@@ -34,6 +35,7 @@ const PlankRotations = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

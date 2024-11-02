@@ -1,5 +1,6 @@
 import React from "react";
 import seatedCableRowsGif from "../assets/SEATED_CABLE_ROW.gif";
+import TimerWidget from "../timer/TimerWidget";
 
 const SeatedCableRows = () => {
   return (
@@ -34,6 +35,7 @@ const SeatedCableRows = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import rowGif from "../assets/Rowing.gif";
+import TimerWidget from "../timer/TimerWidget";
 
 const Row = () => {
   return (
@@ -34,6 +35,7 @@ const Row = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

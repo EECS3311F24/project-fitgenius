@@ -1,5 +1,6 @@
 import React from "react";
 import benchPressGif from "../assets/Front_Squats.gif";
+import TimerWidget from "../timer/TimerWidget";
 
 const FrontSquat = () => {
   return (
@@ -34,6 +35,7 @@ const FrontSquat = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

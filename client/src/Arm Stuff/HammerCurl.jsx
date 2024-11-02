@@ -1,5 +1,6 @@
 import React from "react";
 import hammerCurlGif from "../assets/HAM_CURL.gif";
+import TimerWidget from "../timer/TimerWidget";
 
 const HammerCurl = () => {
   return (
@@ -34,6 +35,7 @@ const HammerCurl = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

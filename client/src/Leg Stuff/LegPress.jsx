@@ -1,5 +1,6 @@
 import React from "react";
 import benchPressGif from "../assets/legpress45-leg-press.gif";
+import TimerWidget from "../timer/TimerWidget";
 
 const LegPress = () => {
   return (
@@ -34,6 +35,7 @@ const LegPress = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

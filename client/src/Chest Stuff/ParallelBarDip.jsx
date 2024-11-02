@@ -1,5 +1,6 @@
 import React from "react";
 import benchPressGif from "../assets/parallel-bar-dip.gif"; // Adjust the path if needed
+import TimerWidget from "../timer/TimerWidget";
 
 const ParallelBarDip = () => {
   return (
@@ -34,6 +35,7 @@ const ParallelBarDip = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

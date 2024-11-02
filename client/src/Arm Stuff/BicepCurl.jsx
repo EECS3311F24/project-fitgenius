@@ -1,5 +1,6 @@
 import React from "react";
 import bicepCurlGif from "../assets/Dumbell-Curl.gif";
+import TimerWidget from "../timer/TimerWidget";
 
 const BicepCurl = () => {
   return (
@@ -34,6 +35,7 @@ const BicepCurl = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

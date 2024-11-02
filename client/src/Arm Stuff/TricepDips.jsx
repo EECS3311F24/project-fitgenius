@@ -1,5 +1,6 @@
 import React from "react";
 import tricepDipsGif from "../assets/TRICEP_DIPS.gif";
+import TimerWidget from "../timer/TimerWidget";
 
 const TricepDips = () => {
   return (
@@ -34,6 +35,7 @@ const TricepDips = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };

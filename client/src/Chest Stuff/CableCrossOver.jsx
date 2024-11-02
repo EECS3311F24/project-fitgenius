@@ -1,5 +1,6 @@
 import React from "react";
 import benchPressGif from "../assets/bdd08cc009b9e4a4bc9c4d59ff686689.gif";
+import TimerWidget from "../timer/TimerWidget";
 
 const CableCrossOver = () => {
   return (
@@ -34,6 +35,7 @@ const CableCrossOver = () => {
           height: "auto", // Maintain aspect ratio
         }}
       />
+      <TimerWidget />
     </div>
   );
 };
