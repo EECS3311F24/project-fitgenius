@@ -27,7 +27,7 @@ import OverheadTricepExtension from "./Arm Stuff/OverheadTricepExtension";
 import Row from "./Back Stuff/Row";
 import DeadLift from "./Back Stuff/Deadlift";
 import SeatedCableRows from "./Back Stuff/SeatedCableRows";
-import DumbellRow from "./Back Stuff/DumbellRow";
+import DumbbellRow from "./Back Stuff/DumbbellRow";
 import ArmLegRaise from "./Back Stuff/ArmLegRaise";
 
 
@@ -64,7 +64,7 @@ function App() {
             <Route path="/row" element={<Row />} />
             <Route path="/deadlift" element={<DeadLift />} />
             <Route path="/seated-cable-rows" element={<SeatedCableRows />} />
-            <Route path="/dumbell-row" element={<DumbellRow />} />
+            <Route path="/dumbell-row" element={<DumbbellRow />} />
             <Route path="/arm-leg-raise" element={<ArmLegRaise />} />
 
           </Routes>
