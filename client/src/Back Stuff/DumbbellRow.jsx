@@ -2,7 +2,7 @@ import React from "react";
 import dumbellRowGif from "../assets/Dumbell_Row.gif";
 import TimerWidget from "../timer/TimerWidget";
 
-const DumbellRow = () => {
+const DumbbellRow = () => {
   return (
     <div
       style={{
@@ -24,11 +24,11 @@ const DumbellRow = () => {
           width: "100%",
         }}
       >
-        Dumbell Row
+        Dumbbell Row
       </h1>
       <img
         src={dumbellRowGif}
-        alt="Dumbell Row"
+        alt="Dumbebll Row"
         style={{
           width: "40%", // Sets the GIF to 50% of the container's width; increase this as needed
           maxWidth: "500px", // Set a max width to control the size on larger screens
@@ -40,4 +40,4 @@ const DumbellRow = () => {
   );
 };
 
-export default DumbellRow;
+export default DumbbellRow;

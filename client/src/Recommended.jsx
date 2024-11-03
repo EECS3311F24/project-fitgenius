@@ -4,6 +4,15 @@ import Chest from './pictures/Chest.jpeg'
 import Arm from './pictures/Arm.jpeg'
 import Back from './pictures/Back.jpeg'
 
+/**
+ * Recommended Component
+ * 
+ * This component displays a grid of recommended exercises,
+ * each represented by an image and a title. 
+ * Clicking on an exercise image navigates to the corresponding exercise page.
+ * 
+ * @returns {JSX.Element} The rendered Recommended component.
+ */
 function Recommended() {
     return (
         <div className="exercise-grid">

@@ -1,5 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
+
+/**This component renders a navigation interface that allows users to 
+ * navigate back to different exercise-related pages in the application.  */
 function LegPage() {
   const navigate = useNavigate();
 

@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 
+/**This component renders a navigation interface that allows users to 
+ * navigate back to different exercise-related pages in the application.  */
 function BackPage() {
     const navigate = useNavigate();
 
@@ -17,7 +19,7 @@ function BackPage() {
                     <button onClick={() => navigate("/seated-cable-rows")}>Seated Cable Rows</button>
                 </li>
                 <li>
-                    <button onClick={() => navigate("/dumbell-row")}>Dumbell Row</button>
+                    <button onClick={() => navigate("/dumbell-row")}>Dumbbell Row</button>
                 </li>
                 <li>
                     <button onClick={() => navigate("/arm-leg-raise")}>Arm Leg Raise</button>
