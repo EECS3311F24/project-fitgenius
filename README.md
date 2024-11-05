@@ -28,9 +28,10 @@ then
 `nvm alias default 20.11.0`
 
 To build and run the project:
-1. First open two terminals
-2. With one terminal `cd` into the `/client` directory and run the command `npm run dev`
-3. With the other terminal `cd` into the `/server` directory and run the command `node --env-file=config.env server`
+1. First, clone the repository on your end
+2. Then open two terminals
+3. With one terminal `cd` into the `/client` directory and run the command `npm run dev`
+4. With the other terminal `cd` into the `/server` directory and run the command `node --env-file=config.env server`
 
 # Contribution
 
