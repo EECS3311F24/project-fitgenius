@@ -29,6 +29,7 @@ import DeadLift from "./Back Stuff/Deadlift";
 import SeatedCableRows from "./Back Stuff/SeatedCableRows";
 import DumbellRow from "./Back Stuff/DumbellRow";
 import ArmLegRaise from "./Back Stuff/ArmLegRaise";
+import PlanPage from "./PlanPage";
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Route path="/chest" element={<ChestgPage />} />
             <Route path="/arm" element={<ArmPage />} />
             <Route path="/back" element={<BackPage />} />
+            <Route path="/plan" element={<PlanPage/>}/>
                         
             <Route path="/bench-press" element={<BenchPress />} />
             <Route path="/cable-crossover" element={<CableCrossOver />} />
