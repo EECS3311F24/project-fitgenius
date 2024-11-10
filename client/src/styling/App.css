@@ -93,7 +93,7 @@ body{
   font-size: 3rem;
 }
 
-/* .SelectedLegList:hover,.SelectedArmList:hover,.SelectedChestList:hover,
+.SelectedLegList:hover,.SelectedArmList:hover,.SelectedChestList:hover,
 .SelectedBackList:hover{
   color: green;
   transform: scale(1.1);
@@ -119,4 +119,4 @@ body{
   cursor: pointer;
   padding-right: 50px;
   padding-bottom: 5px;
-}  */
+} 
