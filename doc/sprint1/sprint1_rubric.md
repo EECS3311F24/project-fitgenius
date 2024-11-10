@@ -47,7 +47,7 @@ Planning Meetings Total Mark: 3 / 5
     - 1 mark  = two or more stories in Trello Backlog are not point estimated or the point value is not recorded in Trello
     - 0 marks = the majority of stories in Trello Backlog are not point estimated or the point value is not recorded in Trello
 
-  Your Mark: 0 (No estimation provided to any card.)
+  Your Mark: 1 (Due dates are not exactly point estimations.)
 
 - Prioritized	(max 4 marks)
     - 4 marks = all stories in Trello Backlog are prioritized in the order of value they bring to the product, make the product competitive and desirable to the users. Additionally, they match with the selection made in Release Planning meeting.
@@ -55,7 +55,7 @@ Planning Meetings Total Mark: 3 / 5
     - 2 marks = two or more stories in Trello Backlog do not satisfy the above
     - 0 marks = 3 or more stories in Trello Backlog do not satisfy the above
 
-  Your Mark: 0 (No prioritization of any card.)
+  Your Mark: 2 (Prioritization numbers are put in each subtask which are not easily visible. Also, some subtasks should be equally important for the feature to be completed, but are given different priority points. There is also no indication in the cards if higher numbers mean high priority or low priority.)
 
 - Clearly Defined Acceptance Criteria (max 2 marks)
     - 2 marks = all Sprint 1 stories have clearly defined and testable acceptance criteria
@@ -64,7 +64,7 @@ Planning Meetings Total Mark: 3 / 5
 
   Your Mark: 2
 
-User Stories Total Mark: 6 / 12
+User Stories Total Mark: 9 / 12
 
 ---
 ## Tracking on Trello  (max 15 marks)
@@ -203,4 +203,4 @@ Total Demo video Mark: 11 / 12
 
 ## Total Mark
 
-53 / 64
+56 / 64
