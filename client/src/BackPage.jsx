@@ -10,19 +10,19 @@ function BackPage() {
             <h1 className="BackName">Back</h1>
             <ul className="BackList">
                 <li>
-                    <button onClick={() => navigate("/row")}>Row</button>
+                    <button className="exercise-button" onClick={() => navigate("/row")}>Row</button>
                 </li>
                 <li>
-                    <button onClick={() => navigate("/deadlift")}>Deadlift</button>
+                    <button className="exercise-button" onClick={() => navigate("/deadlift")}>Deadlift</button>
                 </li>
                 <li>
-                    <button onClick={() => navigate("/seated-cable-rows")}>Seated Cable Rows</button>
+                    <button className="exercise-button" onClick={() => navigate("/seated-cable-rows")}>Seated Cable Rows</button>
                 </li>
                 <li>
-                    <button onClick={() => navigate("/dumbell-row")}>Dumbbell Row</button>
+                    <button className="exercise-button" onClick={() => navigate("/dumbell-row")}>Dumbbell Row</button>
                 </li>
                 <li>
-                    <button onClick={() => navigate("/arm-leg-raise")}>Arm Leg Raise</button>
+                    <button className="exercise-button" onClick={() => navigate("/arm-leg-raise")}>Arm Leg Raise</button>
                 </li>
             </ul>
         </div>

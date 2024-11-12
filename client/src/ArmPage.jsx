@@ -11,16 +11,16 @@ function ArmPage() {
             <h1 className="ArmName">Arm</h1>
             <ul className="ArmList">
                 <li>
-                    <button onClick={() => navigate("/hammer-curl")}>Hammer Curl</button>
+                <button className="exercise-button" onClick={() => navigate("/hammer-curl")}>Hammer Curl</button>
                 </li>
                 <li>
-                    <button onClick={() => navigate("/bicep-curl")}>Bicep Curl</button>
+                    <button className="exercise-button" onClick={() => navigate("/bicep-curl")}>Bicep Curl</button>
                 </li>
                 <li>
-                    <button onClick={() => navigate("/tricep-dips")}>Tricep Dips</button>
+                    <button className="exercise-button" onClick={() => navigate("/tricep-dips")}>Tricep Dips</button>
                 </li>
                 <li>
-                    <button onClick={() => navigate("/overhead-tricep-extension")}>Overhead Tricep Extension</button>
+                    <button className="exercise-button" onClick={() => navigate("/overhead-tricep-extension")}>Overhead Tricep Extension</button>
                 </li>
             </ul>
         </div>
