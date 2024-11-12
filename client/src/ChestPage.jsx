@@ -11,23 +11,23 @@ function ChestPage() {
       <h1 className="ChestName">Chest</h1>
       <ul className="ChestList">
         <li>
-          <button onClick={() => navigate("/bench-press")}>Bench Press</button>
+          <button className="exercise-button" onClick={() => navigate("/bench-press")}>Bench Press</button>
         </li>
         <li>
-          <button onClick={() => navigate("/cable-crossover")}>
+          <button className="exercise-button" onClick={() => navigate("/cable-crossover")}>
             Cable Crossover
           </button>
         </li>
         <li>
-          <button onClick={() => navigate("/parallel-bar-dip")}>
+          <button className="exercise-button" onClick={() => navigate("/parallel-bar-dip")}>
             Parallel Bar Dip
           </button>
         </li>
         <li>
-          <button onClick={() => navigate("/push-ups")}>Push Ups</button>
+          <button className="exercise-button" onClick={() => navigate("/push-ups")}>Push Ups</button>
         </li>
         <li>
-          <button onClick={() => navigate("/plank-rotations")}>
+          <button className="exercise-button" onClick={() => navigate("/plank-rotations")}>
             Plank Rotations
           </button>
         </li>

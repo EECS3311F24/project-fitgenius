@@ -33,10 +33,23 @@ body{
   padding-left: 60px;
   font-size: 7rem;
   color: rgba(32, 14, 36, 0.758);
+  margin-bottom: 20px; /* Adds some space below the heading */
 }
 
 .BackList,.ArmList,.LegList,.ChestList{
-  color: rgba(28, 22, 22, 0.811);
+  list-style-type: none;
+  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px; /* Remove left padding */
+  margin-left: 0px; /* Remove any unnecessary left margin */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align buttons to the start of the list */
+}
+
+.ArmList li, .BackList li, .LegList li, .ChestList li {
+  width: auto; /* Allow the list item width to adjust based on content */
+  margin-bottom: 10px; /* Add space between the buttons */
 }
 
 .PhotoLeg, .PhotoArm,.PhotoBack,.PhotoChest{
@@ -120,3 +133,16 @@ body{
   padding-right: 50px;
   padding-bottom: 5px;
 } 
+
+/* Button styling */
+.exercise-button {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 20px; /* Adds padding to increase width */
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  display:flex; /* Button width adjusts based on text */
+  text-align: center;
+}
+

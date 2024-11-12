@@ -11,18 +11,18 @@ function LegPage() {
       <h1 className="LegName">Leg</h1>
       <ul className="LegList">
         <li >
-          <button className="RecommendLegList" onClick={() => navigate("/leg-press")}>Leg Press</button>
+          <button className="exercise-button" onClick={() => navigate("/leg-press")}>Leg Press</button>
         </li>
         <li>
-          <button className="RecommendLegList" onClick={() => navigate("/bulgarian-split-squat")}>
+          <button className="exercise-button" onClick={() => navigate("/bulgarian-split-squat")}>
             Bulgarian Split Squat
           </button>
         </li>
         <li>
-          <button className="RecommendLegList" onClick={() => navigate("/front-squat")}>Front Squat</button>
+          <button className="exercise-button" onClick={() => navigate("/front-squat")}>Front Squat</button>
         </li>
         <li>
-          <button className="RecommendLegList" onClick={() => navigate("/leg-extensions")}>
+          <button className="exercise-button" onClick={() => navigate("/leg-extensions")}>
             Leg Extension
           </button>
         </li>
