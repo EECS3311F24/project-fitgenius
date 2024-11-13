@@ -18,6 +18,18 @@
 
 ## Sam Lee
 
+### 1. What did you work on since the last standup?
+- Since our last meeting, I completed ticket 7 (user story 2), and all work has been committed.
+
+### 2. What do you commit to next?
+- I have completed my assigned subtasks and will reach out to the team for assistance if needed
+
+### 3. When do you think you'll be done?
+- I anticipated receiving feedback on whether other team members need assistance, and I'm prepared to support thme over the next few days if required.
+
+### 4. Do you have any blockers?
+- I have multiple assignments due this week, which may affect my availability.
+
 ## Davit Piruzyan
 
 ## Ayaan Mohammed
