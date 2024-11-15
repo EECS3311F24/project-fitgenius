@@ -1,11 +1,25 @@
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 /** This component renders a navigation interface that allows users to
  * navigate back to different exercise-related pages in the application.  */
 function LegPage() {
   const navigate = useNavigate();
   const [intensity, setIntensity] = useState(""); // State to track selected intensity
+
+  // Load the saved intensity level from localStorage when the component mounts
+  useEffect(() => {
+    const savedIntensity = localStorage.getItem("intensity");
+    if (savedIntensity) {
+      setIntensity(savedIntensity);
+    }
+  }, []);
+
+  // Update both state and localStorage when intensity level changes
+  const handleIntensityChange = (level) => {
+    setIntensity(level);
+    localStorage.setItem("intensity", level);
+  };
 
   return (
     <div style={{ textAlign: "center" }}>
@@ -27,7 +41,7 @@ function LegPage() {
             name="intensity"
             value="Low"
             checked={intensity === "Low"}
-            onChange={() => setIntensity("Low")}
+            onChange={() => handleIntensityChange("Low")}
           />
           Low
         </label>
@@ -37,7 +51,7 @@ function LegPage() {
             name="intensity"
             value="Med"
             checked={intensity === "Med"}
-            onChange={() => setIntensity("Med")}
+            onChange={() => handleIntensityChange("Med")}
           />
           Med
         </label>
@@ -47,7 +61,7 @@ function LegPage() {
             name="intensity"
             value="High"
             checked={intensity === "High"}
-            onChange={() => setIntensity("High")}
+            onChange={() => handleIntensityChange("High")}
           />
           High
         </label>
