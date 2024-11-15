@@ -1,271 +1,261 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Select from "react-select";
 import { useNavigate } from "react-router-dom";
 
 const legOptions = [
-    { value: "leg_press", label: "Leg Press" },
-    { value: "bulgarian_split_squat", label: "Bulgarian Split Squat" },
-    { value: "front_squat", label: "Front Squat" },
-    { value: "leg_extension", label: "Leg Extension" },
+  { value: "leg_press", label: "Leg Press" },
+  { value: "bulgarian_split_squat", label: "Bulgarian Split Squat" },
+  { value: "front_squat", label: "Front Squat" },
+  { value: "leg_extension", label: "Leg Extension" },
 ];
 const armOptions = [
-    { value: "hammer_curl", label: "Hammer Curl" },
-    { value: "bicep_Curl", label: "Bicep Curl" },
-    { value: "tricep_dips", label: "Tricep Dips" },
-    { value: "overhead_tricep_extension", label: "Overhead Tricep Extension" },
+  { value: "hammer_curl", label: "Hammer Curl" },
+  { value: "bicep_curl", label: "Bicep Curl" },
+  { value: "tricep_dips", label: "Tricep Dips" },
+  { value: "overhead_tricep_extension", label: "Overhead Tricep Extension" },
 ];
-const chestOptions =[
-    {value:"bench_press", label: "Bench Press"},
-    {value: "cable_crossover", label:"Cable Crossover"},
-    {value:"parallel_bar_dip", label:"Parallel Bar Dip"},
-    {value:"push_ups", label:"Push Ups"},
-    {value:"plank_rotations", label:"Plank Rotations"},
-]
-const backOptions =[
-    {value:"row", label:"Row"},
-    {value:"deadlift", label:"Deadlift"},
-    {value:"seated_cable_rows", label:"Seated Cable Rows"},
-    {value:"dumbell_row", label:"Dumbell Row"},
-    {value:"arm_leg_raise", label:"Arm Leg Raise"},
-]
+const chestOptions = [
+  { value: "bench_press", label: "Bench Press" },
+  { value: "cable_crossover", label: "Cable Crossover" },
+  { value: "parallel_bar_dip", label: "Parallel Bar Dip" },
+  { value: "push_ups", label: "Push Ups" },
+  { value: "plank_rotations", label: "Plank Rotations" },
+];
+const backOptions = [
+  { value: "row", label: "Row" },
+  { value: "deadlift", label: "Deadlift" },
+  { value: "seated_cable_rows", label: "Seated Cable Rows" },
+  { value: "dumbell_row", label: "Dumbbell Row" },
+  { value: "arm_leg_raise", label: "Arm Leg Raise" },
+];
 
+function PlanPage() {
+  const [selectedLegOptions, setSelectedLegOptions] = useState([]);
+  const [selectedArmOptions, setSelectedArmOptions] = useState([]);
+  const [selectedChestOptions, setSelectedChestOptions] = useState([]);
+  const [selectedBackOptions, setSelectedBackOptions] = useState([]);
+  const [intensity, setIntensity] = useState(""); // State to track selected intensity
 
-function PlanPage(){
-    const [selectedLegOptions, setSelectedLegOptions] = useState([]);
-    const [selectedArmOptions, setSelectedArmOptions] = useState([]);
-    const [selectedChestOptions, setSelectedChestOptions] = useState([]);
-    const [selectedBackOptions, setSelectedBackOptions] = useState([]);
+  const navigate = useNavigate();
 
-    const navigate = useNavigate();
+  // Load the saved intensity level from localStorage when the component mounts
+  useEffect(() => {
+    const savedIntensity = localStorage.getItem("intensity");
+    if (savedIntensity) {
+      setIntensity(savedIntensity);
+    }
+  }, []);
 
-    const handleLegChange = (options) => setSelectedLegOptions(options);
-    const handleArmChange = (options) => setSelectedArmOptions(options);
-    const handleChestChange = (options) => setSelectedChestOptions(options);
-    const handleBackChange = (options) => setSelectedBackOptions(options);
+  // Update both state and localStorage when intensity level changes
+  const handleIntensityChange = (level) => {
+    setIntensity(level);
+    localStorage.setItem("intensity", level);
+  };
 
-    const handleExerciseClick = (value) => {
-        switch (value) {
-            case "leg_press": navigate("/leg-press"); break;
-            case "bulgarian_split_squat": navigate("/bulgarian-split-squat"); break;
-            case "front_squat": navigate("/front-squat"); break;
-            case "leg_extension": navigate("/leg-extensions"); break;
-            case "hammer_curl": navigate("/hammer-curl"); break;
-            case "bicep_curl": navigate("/bicep-curl"); break;
-            case "tricep_dips": navigate("/tricep-dips"); break;
-            case "overhead_tricep_extension": navigate("/overhead-tricep-extension"); break;
-            case "bench_press": navigate("/bench-press"); break;
-            case "cable_crossover": navigate("/cable-crossover"); break;
-            case "parallel_bar_dip": navigate("/parallel-bar-dip"); break;
-            case "push_ups": navigate("/push-ups"); break;
-            case "plank_rotations": navigate("/plank-rotations"); break;
-            case "row": navigate("/row"); break;
-            case "deadlift": navigate("/deadlift"); break;
-            case "seated_cable_rows": navigate("/seated-cable-rows"); break;
-            case "dumbbell_row": navigate("/dumbell-row"); break;
-            case "arm_leg_raise": navigate("/arm-leg-raise"); break;
-            default: break;
-        }
-    };
-    return(
-        <div className="PlanPage">
-            <h1 className="PlanPageTitle">Plan Page</h1>
-            <h1 className="ChooseExercise">Choose Exercises</h1>
-            <h2>Leg Exercises</h2>
-            <Select className="SelectLeg"
-                options={legOptions}
-                value={selectedLegOptions}
-                onChange={handleLegChange}
-                isMulti={true}
+  const handleLegChange = (options) => setSelectedLegOptions(options);
+  const handleArmChange = (options) => setSelectedArmOptions(options);
+  const handleChestChange = (options) => setSelectedChestOptions(options);
+  const handleBackChange = (options) => setSelectedBackOptions(options);
+
+  const handleExerciseClick = (value) => {
+    switch (value) {
+      case "leg_press":
+        navigate("/leg-press");
+        break;
+      case "bulgarian_split_squat":
+        navigate("/bulgarian-split-squat");
+        break;
+      case "front_squat":
+        navigate("/front-squat");
+        break;
+      case "leg_extension":
+        navigate("/leg-extensions");
+        break;
+      case "hammer_curl":
+        navigate("/hammer-curl");
+        break;
+      case "bicep_curl":
+        navigate("/bicep-curl");
+        break;
+      case "tricep_dips":
+        navigate("/tricep-dips");
+        break;
+      case "overhead_tricep_extension":
+        navigate("/overhead-tricep-extension");
+        break;
+      case "bench_press":
+        navigate("/bench-press");
+        break;
+      case "cable_crossover":
+        navigate("/cable-crossover");
+        break;
+      case "parallel_bar_dip":
+        navigate("/parallel-bar-dip");
+        break;
+      case "push_ups":
+        navigate("/push-ups");
+        break;
+      case "plank_rotations":
+        navigate("/plank-rotations");
+        break;
+      case "row":
+        navigate("/row");
+        break;
+      case "deadlift":
+        navigate("/deadlift");
+        break;
+      case "seated_cable_rows":
+        navigate("/seated-cable-rows");
+        break;
+      case "dumbell_row":
+        navigate("/dumbell-row");
+        break;
+      case "arm_leg_raise":
+        navigate("/arm-leg-raise");
+        break;
+      default:
+        break;
+    }
+  };
+
+  return (
+    <div className="PlanPage">
+      <h1 className="PlanPageTitle">Plan Page</h1>
+      <h2 className="ChooseExercise">Choose Exercises & Intensity Level</h2>
+
+      {/* Intensity Section */}
+      <div style={{ textAlign: "center", marginBottom: "20px" }}>
+        <h2 style={{ fontSize: "1.5em", marginBottom: "10px" }}>
+          Intensity Level
+        </h2>
+        <div style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
+          <label>
+            <input
+              type="radio"
+              name="intensity"
+              value="Low"
+              checked={intensity === "Low"}
+              onChange={() => handleIntensityChange("Low")}
             />
-            <h2>Arm Exercises</h2>
-            <Select className="SelectArm"
-                options={armOptions}
-                value={selectedArmOptions}
-                onChange={handleArmChange}
-                isMulti={true}
+            Low
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="intensity"
+              value="Med"
+              checked={intensity === "Med"}
+              onChange={() => handleIntensityChange("Med")}
             />
-            <h2>Chest Exercises</h2>
-            <Select className="SelectChest"
-                options={chestOptions}
-                value={selectedChestOptions}
-                onChange={handleChestChange}
-                isMulti={true}
+            Med
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="intensity"
+              value="High"
+              checked={intensity === "High"}
+              onChange={() => handleIntensityChange("High")}
             />
-            <h2>Back Exercises</h2>
-            <Select className="SelectBack"
-                options={backOptions}
-                value={selectedBackOptions}
-                onChange={handleBackChange}
-                isMulti={true}
-            />
-            <div className="Selected-exercises-container">
-                <h2>Selected Exercises:</h2>
-                {selectedLegOptions.length > 0 && (
-                    <ul className="SelectedLegList-List">
-                        {selectedLegOptions.map((option) => (
-                            <li className="SelectedLegList"key={option.value} onClick={() => handleExerciseClick(option.value)}>
-                                {option.label}
-                            </li>
-                        ))}
-                    </ul>
-                )}
-                {selectedArmOptions.length > 0 && (
-                    <ul className="SelectedArmList-List">
-                        {selectedArmOptions.map((option) => (
-                            <li className="SelectedArmList" key={option.value} onClick={() => handleExerciseClick(option.value)}>
-                                {option.label}
-                            </li>
-                        ))}
-                    </ul>
-                )}
-                {selectedChestOptions.length > 0 && (
-                    <ul className="SelectedChestList-List">
-                        {selectedChestOptions.map((option) => (
-                            <li className="SelectedChestList" key={option.value} onClick={() => handleExerciseClick(option.value)}>
-                                {option.label}
-                            </li>
-                        ))}
-                    </ul>
-                )}
-                {selectedBackOptions.length > 0 && (
-                    <ul className="SelectedBackList-List">
-                        {selectedBackOptions.map((option) => (
-                            <li className="SelectedBackList" key={option.value} onClick={() => handleExerciseClick(option.value)}>
-                                {option.label}
-                            </li>
-                        ))}
-                    </ul>
-                )}
-                {selectedLegOptions.length === 0 && selectedArmOptions.length === 0 && selectedChestOptions.length === 0 && selectedBackOptions.length === 0 && (
-                    <p>No exercises selected.</p>
-                )}
-            </div>
+            High
+          </label>
         </div>
-    );
+      </div>
+
+      <h2>Leg Exercises</h2>
+      <Select
+        className="SelectLeg"
+        options={legOptions}
+        value={selectedLegOptions}
+        onChange={handleLegChange}
+        isMulti={true}
+      />
+      <h2>Arm Exercises</h2>
+      <Select
+        className="SelectArm"
+        options={armOptions}
+        value={selectedArmOptions}
+        onChange={handleArmChange}
+        isMulti={true}
+      />
+      <h2>Chest Exercises</h2>
+      <Select
+        className="SelectChest"
+        options={chestOptions}
+        value={selectedChestOptions}
+        onChange={handleChestChange}
+        isMulti={true}
+      />
+      <h2>Back Exercises</h2>
+      <Select
+        className="SelectBack"
+        options={backOptions}
+        value={selectedBackOptions}
+        onChange={handleBackChange}
+        isMulti={true}
+      />
+
+      <div className="Selected-exercises-container">
+        <h2>Selected Exercises:</h2>
+        {selectedLegOptions.length > 0 && (
+          <ul className="SelectedLegList-List">
+            {selectedLegOptions.map((option) => (
+              <li
+                className="SelectedLegList"
+                key={option.value}
+                onClick={() => handleExerciseClick(option.value)}
+              >
+                {option.label}
+              </li>
+            ))}
+          </ul>
+        )}
+        {selectedArmOptions.length > 0 && (
+          <ul className="SelectedArmList-List">
+            {selectedArmOptions.map((option) => (
+              <li
+                className="SelectedArmList"
+                key={option.value}
+                onClick={() => handleExerciseClick(option.value)}
+              >
+                {option.label}
+              </li>
+            ))}
+          </ul>
+        )}
+        {selectedChestOptions.length > 0 && (
+          <ul className="SelectedChestList-List">
+            {selectedChestOptions.map((option) => (
+              <li
+                className="SelectedChestList"
+                key={option.value}
+                onClick={() => handleExerciseClick(option.value)}
+              >
+                {option.label}
+              </li>
+            ))}
+          </ul>
+        )}
+        {selectedBackOptions.length > 0 && (
+          <ul className="SelectedBackList-List">
+            {selectedBackOptions.map((option) => (
+              <li
+                className="SelectedBackList"
+                key={option.value}
+                onClick={() => handleExerciseClick(option.value)}
+              >
+                {option.label}
+              </li>
+            ))}
+          </ul>
+        )}
+        {selectedLegOptions.length === 0 &&
+          selectedArmOptions.length === 0 &&
+          selectedChestOptions.length === 0 &&
+          selectedBackOptions.length === 0 && <p>No exercises selected.</p>}
+      </div>
+    </div>
+  );
 }
+
 export default PlanPage;
-// import React, { useState } from "react";
-// import Select from "react-select";
-// import { useNavigate } from "react-router-dom";
-
-// const legOptions = [
-//     { value: "leg_press", label: "Leg Press" },
-//     { value: "bulgarian_split_squat", label: "Bulgarian Split Squat" },
-//     { value: "front_squat", label: "Front Squat" },
-//     { value: "leg_extension", label: "Leg Extension" },
-// ];
-// const armOptions = [
-//     { value: "hammer_curl", label: "Hammer Curl" },
-//     { value: "bicep_Curl", label: "Bicep Curl" },
-//     { value: "tricep_dips", label: "Tricep Dips" },
-//     { value: "overhead_tricep_extension", label: "Overhead Tricep Extension" },
-// ];
-// const chestOptions =[
-//     {value:"bench_press", label: "Bench Press"},
-//     {value: "cable_crossover", label:"Cable Crossover"},
-//     {value:"parallel_bar_dip", label:"Parallel Bar Dip"},
-//     {value:"push_ups", label:"Push Ups"},
-//     {value:"plank_rotations", label:"Plank Rotations"},
-// ]
-// const backOptions =[
-//     {value:"row", label:"Row"},
-//     {value:"deadlift", label:"Deadlift"},
-//     {value:"seated_cable_rows", label:"Seated Cable Rows"},
-//     {value:"dumbell_row", label:"Dumbell Row"},
-//     {value:"arm_leg_raise", label:"Arm Leg Raise"},
-// ]
-
-
-// function PlanPage(){
-//     const [selectedLegOptions, setSelectedLegOptions] = useState([]);
-//     const [selectedArmOptions, setSelectedArmOptions] = useState([]);
-//     const [selectedChestOptions, setSelectedChestOptions] = useState([]);
-//     const [selectedBackOptions, setSelectedBackOptions] = useState([]);
-
-//     const navigate = useNavigate();
-
-//     const handleLegChange = (options) => setSelectedLegOptions(options);
-//     const handleArmChange = (options) => setSelectedArmOptions(options);
-//     const handleChestChange = (options) => setSelectedChestOptions(options);
-//     const handleBackChange = (options) => setSelectedBackOptions(options);
-
-
-//     return(
-//         <div className="PlanPage">
-//             <h1 className="PlanPageTitle">Plan Page</h1>
-//             <h1 className="ChooseExercise">Choose Exercises</h1>
-//             <h2>Leg Exercises</h2>
-//             <Select className="SelectLeg"
-//                 options={legOptions}
-//                 value={selectedLegOptions}
-//                 onChange={handleLegChange}
-//                 isMulti={true}
-//             />
-//             <h2>Arm Exercises</h2>
-//             <Select className="SelectArm"
-//                 options={armOptions}
-//                 value={selectedArmOptions}
-//                 onChange={handleArmChange}
-//                 isMulti={true}
-//             />
-//             <h2>Chest Exercises</h2>
-//             <Select className="SelectChest"
-//                 options={chestOptions}
-//                 value={selectedChestOptions}
-//                 onChange={handleChestChange}
-//                 isMulti={true}
-//             />
-//             <h2>Back Exercises</h2>
-//             <Select className="SelectBack"
-//                 options={backOptions}
-//                 value={selectedBackOptions}
-//                 onChange={handleBackChange}
-//                 isMulti={true}
-//             />
-//             <div className="Selected-exercises-container">
-//                 <h2>Selected Exercises:</h2>
-//                 {selectedLegOptions.length > 0 && (
-//                     <ul className="SelectedLegList-List">
-//                         {selectedLegOptions.map((option) => (
-//                             <li className="SelectedLegList"key={option.value} onClick={() => handleExerciseClick(option.value)}>
-//                                 {option.label}
-//                             </li>
-//                         ))}
-//                     </ul>
-//                 )}
-//                 {selectedArmOptions.length > 0 && (
-//                     <ul className="SelectedArmList-List">
-//                         {selectedArmOptions.map((option) => (
-//                             <li className="SelectedArmList" key={option.value} onClick={() => handleExerciseClick(option.value)}>
-//                                 {option.label}
-//                             </li>
-//                         ))}
-//                     </ul>
-//                 )}
-//                 {selectedChestOptions.length > 0 && (
-//                     <ul className="SelectedChestList-List">
-//                         {selectedChestOptions.map((option) => (
-//                             <li className="SelectedChestList" key={option.value} onClick={() => handleExerciseClick(option.value)}>
-//                                 {option.label}
-//                             </li>
-//                         ))}
-//                     </ul>
-//                 )}
-//                 {selectedBackOptions.length > 0 && (
-//                     <ul className="SelectedBackList-List">
-//                         {selectedBackOptions.map((option) => (
-//                             <li className="SelectedBackList" key={option.value} onClick={() => handleExerciseClick(option.value)}>
-//                                 {option.label}
-//                             </li>
-//                         ))}
-//                     </ul>
-//                 )}
-//                 {selectedLegOptions.length === 0 && selectedArmOptions.length === 0 && selectedChestOptions.length === 0 && selectedBackOptions.length === 0 && (
-//                     <p>No exercises selected.</p>
-//                 )}
-//             </div>
-//         </div>
-//         // <h1>Plan Page</h1>
-//     );
-// }
-// export default PlanPage;
