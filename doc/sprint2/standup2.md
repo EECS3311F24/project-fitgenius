@@ -16,6 +16,16 @@
 ## Brandon Ngo
 
 ## Sam Lee
+### 1. What did you work on since the last standup?
+- Since the last meeting, I have been working on Trello.
+### 2. What do you commit to next?
+- I committed everything on my part last week, so there is nothing left for me to commit.
+  
+### 3. When do you think you'll be done?
+-  I expect to finish this (Trello) in a couple of days.
+
+### 4. Do you have any blockers?
+- I have multiple assignments due this week and a test next week, which may affect my availability.
 
 ## Davit Piruzyan
 
