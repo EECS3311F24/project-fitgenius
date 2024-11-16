@@ -122,7 +122,7 @@ function PlanPage() {
     }
   };
 
-    async function testSubmit(e) {
+    async function savePlan(e) {
         e.preventDefault();
 
         const person = {
@@ -286,7 +286,7 @@ function PlanPage() {
           selectedChestOptions.length === 0 &&
           selectedBackOptions.length === 0 && <p>No exercises selected.</p>}
       </div>
-      <button onClick={testSubmit}>save</button>
+      <button onClick={savePlan}>Save Plan</button>
     </div>
   );
 }
