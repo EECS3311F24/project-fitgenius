@@ -30,6 +30,7 @@ import SeatedCableRows from "./Back Stuff/SeatedCableRows";
 import DumbbellRow from "./Back Stuff/DumbbellRow";
 import ArmLegRaise from "./Back Stuff/ArmLegRaise";
 import PlanPage from "./PlanPage";
+import SavedPlansPage from "./SavedPlansPage";
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
             <Route path="/arm" element={<ArmPage />} />
             <Route path="/back" element={<BackPage />} />
             <Route path="/plan" element={<PlanPage/>}/>
+            <Route path="/saved-plans" element={<SavedPlansPage/>}/>
                         
             <Route path="/bench-press" element={<BenchPress />} />
             <Route path="/cable-crossover" element={<CableCrossOver />} />
