@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Select from "react-select";
 import { useNavigate } from "react-router-dom";
 
+// Define exercise options for legs, arms, chest, and back
 const legOptions = [
   { value: "leg_press", label: "Leg Press" },
   { value: "bulgarian_split_squat", label: "Bulgarian Split Squat" },
@@ -29,7 +30,9 @@ const backOptions = [
   { value: "arm_leg_raise", label: "Arm Leg Raise" },
 ];
 
+// Main functional component for the PlanPage
 function PlanPage() {
+  // Define state variables to track selected exercises and intensity
   const [selectedLegOptions, setSelectedLegOptions] = useState([]);
   const [selectedArmOptions, setSelectedArmOptions] = useState([]);
   const [selectedChestOptions, setSelectedChestOptions] = useState([]);
@@ -57,6 +60,7 @@ function PlanPage() {
   const handleChestChange = (options) => setSelectedChestOptions(options);
   const handleBackChange = (options) => setSelectedBackOptions(options);
 
+  // Handle clicks on selected exercises to navigate to the corresponding exercise page
   const handleExerciseClick = (value) => {
     switch (value) {
       case "leg_press":
@@ -125,7 +129,7 @@ function PlanPage() {
 
       {/* Intensity Section */}
       <div style={{ textAlign: "center", marginBottom: "20px" }}>
-        <h2 style={{ fontSize: "1.5em", marginBottom: "10px" }}>
+        <h2 style={{ fontFamily: "Poppins", fontSize: "1.5em", marginBottom: "10px" }}>
           Intensity Level
         </h2>
         <div style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
@@ -161,7 +165,7 @@ function PlanPage() {
           </label>
         </div>
       </div>
-
+      {/* Sections for selecting exercises for each body part */}
       <h2>Leg Exercises</h2>
       <Select
         className="SelectLeg"
@@ -194,7 +198,7 @@ function PlanPage() {
         onChange={handleBackChange}
         isMulti={true}
       />
-
+    {/* Display selected exercises with navigation functionality */}
       <div className="Selected-exercises-container">
         <h2>Selected Exercises:</h2>
         {selectedLegOptions.length > 0 && (
@@ -249,6 +253,7 @@ function PlanPage() {
             ))}
           </ul>
         )}
+        {/* Show a message if no exercises are selected */}
         {selectedLegOptions.length === 0 &&
           selectedArmOptions.length === 0 &&
           selectedChestOptions.length === 0 &&

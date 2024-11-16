@@ -7,9 +7,9 @@ const LegPress = () => {
     <div
       style={{
         display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
+        flexDirection: "row", // Align elements side by side (row direction)
+        alignItems: "center", // Vertically center the items
+        justifyContent: "center", // Center the items horizontally
         minHeight: "100vh",
         backgroundColor: "#b3cde0",
         position: "relative",
@@ -26,16 +26,23 @@ const LegPress = () => {
       >
         Leg Press
       </h1>
+
+      {/* GIF */}
       <img
         src={benchPressGif}
-        alt="Bench Press Exercise"
+        alt="Leg Press Exercise"
         style={{
-          width: "40%", // Sets the GIF to 50% of the container's width; increase this as needed
-          maxWidth: "500px", // Set a max width to control the size on larger screens
+          width: "30%", // Controls the width of the GIF
+          maxWidth: "500px", // Max width for the GIF
           height: "auto", // Maintain aspect ratio
+          marginRight: "20px", // Add space between the GIF and TimerWidget
         }}
       />
-      <TimerWidget />
+
+      {/* Timer Widget aligned to the right */}
+      <div style={{ marginLeft: "auto" }}>
+        <TimerWidget />
+      </div>
     </div>
   );
 };

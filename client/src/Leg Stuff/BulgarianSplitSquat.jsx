@@ -7,7 +7,7 @@ const BulgarianSplitSquat = () => {
     <div
       style={{
         display: "flex",
-        flexDirection: "column",
+        flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
         minHeight: "100vh",
@@ -30,12 +30,16 @@ const BulgarianSplitSquat = () => {
         src={benchPressGif}
         alt="Bench Press Exercise"
         style={{
-          width: "40%", // Sets the GIF to 50% of the container's width; increase this as needed
-          maxWidth: "500px", // Set a max width to control the size on larger screens
-          height: "auto", // Maintain aspect ratio
+          width: "30%", // Controls the width of the GIF
+          maxWidth: "40", // Max width for the GIF
+          height: "30%", // Maintain aspect ratio
+          marginRight: "20px", // Add space between the GIF and TimerWidget
         }}
       />
-      <TimerWidget />
+      {/* Timer Widget aligned to the right */}
+      <div style={{ marginLeft: "auto" }}>
+        <TimerWidget />
+      </div>
     </div>
   );
 };
