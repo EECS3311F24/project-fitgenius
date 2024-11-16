@@ -286,7 +286,7 @@ function PlanPage() {
           selectedChestOptions.length === 0 &&
           selectedBackOptions.length === 0 && <p>No exercises selected.</p>}
       </div>
-      <button onClick={savePlan}>Save Plan</button>
+      <button className="exercise-button" onClick={savePlan}>Save Plan</button>
     </div>
   );
 }
