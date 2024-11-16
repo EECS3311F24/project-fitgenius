@@ -30,7 +30,7 @@ then
 To build and run the project:
 1. First, clone the repository on your end
 2. Then open two terminals
-3. With one terminal `cd` into the `/client` directory and run the command  `npm install react-select` then `npm run dev`
+3. With one terminal `cd` into the `/client` directory and run the command then `npm run dev`
 4. With the other terminal `cd` into the `/server` directory and run the command `node --env-file=config.env server`
 
 # Contribution
