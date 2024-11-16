@@ -1,16 +1,17 @@
 main {
     padding-top: 50px;
+    border-radius: 20px;
     max-width: 340px;
     margin: 0 auto;
     padding: 50px;
     text-align: center;
-    background-color: #30384b;
-    color: #eee;
+    background-color: rgb(20, 33, 61);
+    color:  rgb(20, 33, 61);
 }
 
 button {
     background-color: transparent;
-    color: rgba(255, 255, 255, 0.8);
+    color:  rgb(234, 63, 63);
     border: 0;
     display: inline-block;
     width: 100px;
