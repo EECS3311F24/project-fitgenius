@@ -122,6 +122,33 @@ function PlanPage() {
     }
   };
 
+    async function testSubmit(e) {
+        e.preventDefault();
+
+        const person = {
+            leg: selectedLegOptions[0].label,
+            arm: selectedArmOptions[0].label,
+            chest: selectedChestOptions[0].label,
+            back: selectedBackOptions[0].label,
+        };
+
+        try {
+            response = await fetch("http://localhost:5050/record", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(person),
+            });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        } catch (error) {
+        console.error('A problem occurred with your fetch operation: ', error);
+        }
+    }
+
   return (
     <div className="PlanPage">
       <h1 className="PlanPageTitle">Plan Page</h1>
@@ -259,6 +286,7 @@ function PlanPage() {
           selectedChestOptions.length === 0 &&
           selectedBackOptions.length === 0 && <p>No exercises selected.</p>}
       </div>
+      <button onClick={testSubmit}>save</button>
     </div>
   );
 }
