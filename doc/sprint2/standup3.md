@@ -8,14 +8,27 @@
 - Next, we plan on conducting the sprint retrospective and record the demo video.
   
 ### 3. When do you think you'll be done?
--  We should be done with that tomorrow.
+- We should be done with that tomorrow.
 
 ### 4. Do you have any blockers?
 - Yes, i have 1 of the deadlines remaining that is in conflict with this course.
 
 ## Brandon Ngo
 
+### 1. What did you work on since the last standup?
+- Created a separate page for displaying the workout plans saved in the database.
+
+### 2. What do you commit to next?
+- Brush up the code for saving and displaying workout plans.
+  
+### 3. When do you think you'll be done?
+- In 1-2 days given no major blockers occur.
+
+### 4. Do you have any blockers?
+- No.
+
 ## Sam Lee
+
 ### 1. What did you work on since the last standup?
 - Since the last meeting, I have been working on Trello.
 ### 2. What do you commit to next?
@@ -29,4 +42,28 @@
 
 ## Davit Piruzyan
 
+### 1. What did you work on since the last standup?
+- 
+
+### 2. What do you commit to next?
+- 
+  
+### 3. When do you think you'll be done?
+- 
+
+### 4. Do you have any blockers?
+- 
+
 ## Ayaan Mohammed
+
+### 1. What did you work on since the last standup?
+- 
+
+### 2. What do you commit to next?
+- 
+  
+### 3. When do you think you'll be done?
+- 
+
+### 4. Do you have any blockers?
+- 
