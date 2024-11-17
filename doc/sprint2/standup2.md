@@ -57,13 +57,13 @@
 ## Ayaan Mohammed
 
 ### 1. What did you work on since the last standup?
-- 
+- Since the last standup, I learned how to create radio buttons and work with local storage. I also explored the concept of a burndown chart and started working on it.
 
 ### 2. What do you commit to next?
-- 
+- I commit to finishing the intensity feature, where users can select the low, medium, or high intensity level for their workout.
   
 ### 3. When do you think you'll be done?
-- 
+- I think I'll be done in the next 2-3 days.
 
 ### 4. Do you have any blockers?
-- 
+- The blocker I currently have is learning how to use the local variable effectively and integrating it with the timer. I need to set the timer to adjust according to the intensity level: low = 1 minute, medium = 2 minutes, and high = 3 minutes.
