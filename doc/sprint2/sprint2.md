@@ -30,17 +30,13 @@ User story numbers are referenced from PB.md
 Description: As a user, I want to create and customize my own workout routine so that I can have flexibility in how I train.
 
 Tasks Breakdown:
-1) The Plan Page Navigation Bar will consistently route users to the plan page, which allow user to choose exercises.
+1) Create a 'Plan Page' that includes a navigation bar called Plan Page linking directly to the Plan Page.
 
-2) User can add exercises by selecting options inside a dropdown box
+2) Implement selection boxes for each muscle group—leg, arm, chest, and back—allowing users to choose multiple exercises within each group.
 
-3) User can delete individual exercises by clicking an “X” next to each exercise
+3) Clicking on each exercise in the selection boxes should display the exercises at the bottom, and clicking on an exercise should navigate to a page that shows a GIF and a timer.
 
-4) User can delete all exercises for a muscle group by clicking the “X” on the right side of the selection box
-
-5) Selected exercises are displayed at the bottom of the page
-
-6) User can click on a selected exercise displayed at the bottom, which will direct to page with a GIF and a timer.
+4) Enable saving created workout plans to the database and add a separate page for displaying saved plans
 
 **User Story 9**
 Description: As a user, I want to adjust my workout routine based on my current energy level or time constraints so that I can adapt my training accordingly.
