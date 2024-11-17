@@ -57,13 +57,13 @@
 ## Ayaan Mohammed
 
 ### 1. What did you work on since the last standup?
-- 
+- Since the last standup, I finished all the features and learned how to use the local variable effectively. I also integrated it with the timer to adjust according to the intensity level: low = 1 minute, medium = 2 minutes, and high = 3 minutes.
 
 ### 2. What do you commit to next?
-- 
+- I commit to finishing the work on the burndown chart and the schedule PDF.
   
 ### 3. When do you think you'll be done?
-- 
+- I'll be done by Saturday or Sunday, as I have a midterm and a couple of assignments from other courses to manage as well.
 
 ### 4. Do you have any blockers?
-- 
+- The blockers I have are understanding how to properly create the burndown chart and how it should be done. Additionally, for the schedule PDF, I need to look into network diagrams and dependencies within our code.
