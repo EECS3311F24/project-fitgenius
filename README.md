@@ -1,6 +1,6 @@
 # Motivation
 
-FitGenius is an application meant to ease users into their fitness journey conveniently.
+FitGenius 💪 is an application meant to ease users into their fitness journey conveniently.
 We all know starting to work out can be very daunting and difficult especially to those with no guidance.
 Health is an essential part of everyone's life and should not be neglected.
 The aim with FitGenius is to get everyone working out through the use of our app.
