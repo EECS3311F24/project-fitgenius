@@ -43,16 +43,16 @@
 ## Davit Piruzyan
 
 ### 1. What did you work on since the last standup?
-- 
+- Since the last meeting I have been working on the software design document and the CRC cards
 
 ### 2. What do you commit to next?
-- 
+- Next, I will work on either on the intensity feature with Ayaan and/or the other software Design document.
   
 ### 3. When do you think you'll be done?
-- 
+- before Sunday.
 
 ### 4. Do you have any blockers?
-- 
+- A few assignments from other courses.
 
 ## Ayaan Mohammed
 
