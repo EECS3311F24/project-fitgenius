@@ -43,16 +43,16 @@
 ## Davit Piruzyan
 
 ### 1. What did you work on since the last standup?
-- 
+- I have been working on the second software design document and the CRC cards.
 
 ### 2. What do you commit to next?
-- 
+- For now I commit on working on a bit of design to make it more eye appealing and also maybe even adding more options to the "saved plans page".
   
 ### 3. When do you think you'll be done?
-- 
+- Saturday night maybe sunday morning.
 
 ### 4. Do you have any blockers?
-- 
+- A few assignments but it wont affect the project.
 
 ## Ayaan Mohammed
 
