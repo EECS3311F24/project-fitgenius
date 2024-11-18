@@ -45,16 +45,16 @@
 ## Davit Piruzyan
 
 ### 1. What did you work on since the last standup?
-- 
+- Since the last standup, I worked on types of exercise buttons under the muscle group categories.
 
 ### 2. What do you commit to next?
-- 
+- I commit on doing the software design document.
   
 ### 3. When do you think you'll be done?
-- 
+- Close to Sunday. 
 
 ### 4. Do you have any blockers?
-- 
+- I have a calculus 3 midterm that I need to study for which may affect my availability.
 
 ## Ayaan Mohammed
 
