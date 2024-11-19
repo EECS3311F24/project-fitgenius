@@ -183,3 +183,43 @@ body{
   text-align: center;
 }
 
+.FeedBack {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+.CommentsFitness {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.submitbutton {
+  background-color: rgb(153, 195, 153);
+  color: white;
+  font-size: 1.3rem;
+  padding: 7px 20px ;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+.listcomments{
+  text-align: left;
+}
+
+/* button.submitbutton{
+  padding-left: 20px;
+  color: black;
+  background-color: green;
+  border: none; 
+} */
+/* .CommentsFitness{
+  padding-left: 30px;
+} */
