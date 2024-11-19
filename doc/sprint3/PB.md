@@ -85,5 +85,9 @@
 - **Criteria of satisfaction:** When the app shows users progress updates of others who started at similar fitness levels, to foster motivation and a sense of community.
 
 ## User Story 22:
-- - **As a user**, I want the app to look appealing.
+-  **As a user**, I want the app to look appealing.
 - **Criteria of satisfaction:** When the app has a cohesive and impressive look.
+
+## User Story 23:
+-  **As a user**, I want to be able to delete my saved plans.
+- **Criteria of satisfaction:** Delete button on saved plan pages clears all or just intended wokout plan.
