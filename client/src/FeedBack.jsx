@@ -15,16 +15,11 @@ const FeedBack = () => {
       }
     };
 
-    const handleDelete = (index) => {
-      const updatedComments = [...comments];
-      updatedComments.splice(index, 1);
-      setComments(updatedComments);
-    };
   
     return (
       <div >
         <h1 className="FeedBack">Feedback</h1>
-        <form onSubmit={handleSubmit} className="mb-4">
+        <form onSubmit={handleSubmit} className="handle submit">
           <label className="CommentsFitness">Comments</label>
           <textarea
             value={comment}
@@ -32,6 +27,10 @@ const FeedBack = () => {
             required
             placeholder="Enter your comment"
           />
+          <div>
+            <button type="submit"className="submitbutton">Submit Comment</button>
+            
+          </div>
 
         </form>
   
