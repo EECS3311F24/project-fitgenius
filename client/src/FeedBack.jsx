@@ -15,6 +15,13 @@ const FeedBack = () => {
       }
     };
 
+    const handleDelete = (index) => {
+      if (comments.length > 0) {
+        const updatedComments = [...comments];
+        updatedComments.pop();
+        setComments(updatedComments);
+      }
+    };
   
     return (
       <div >
@@ -26,10 +33,10 @@ const FeedBack = () => {
             onChange={handleCommentChange}
             required
             placeholder="Enter your comment"
-          />
+          />    
           <div>
             <button type="submit"className="submitbutton">Submit Comment</button>
-            
+            <button className="deletebutton" onClick={handleDelete}>Delete Most Recent</button>
           </div>
 
         </form>

@@ -197,7 +197,7 @@ body{
 }
 
 form {
-  max-width: 500px;
+  max-width: 300px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -213,7 +213,24 @@ form {
   width: 100%;
   transition: background-color 0.3s ease;
 }
-
+.deletebutton {
+  margin-top: 10px;
+  background-color: rgb(203, 161, 122);
+  color: white;
+  font-size: 1.3rem;
+  padding: 7px 20px ;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+textarea{
+  width: 100%;
+  min-height: 100px;
+  max-width: 100%;
+  resize: none;
+}
 .listcomments{
   text-align: left;
 }
