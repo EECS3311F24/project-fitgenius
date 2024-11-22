@@ -1,32 +1,40 @@
 import React from "react";
 import benchPressGif from "../assets/legpress45-leg-press.gif";
 import TimerWidget from "../timer/TimerWidget";
+import FeedBack from "../FeedBack";
 
 const LegPress = () => {
   return (
     <div
       style={{
         display: "flex",
-        flexDirection: "row", // Align elements side by side (row direction)
+        flexDirection: "column",
         alignItems: "center", // Vertically center the items
-        justifyContent: "center", // Center the items horizontally
         minHeight: "100vh",
         backgroundColor: "#b3cde0",
         position: "relative",
+        padding: "20px",
       }}
     >
       <h1
         style={{
           fontSize: "3rem", // Larger font size for heading
-          position: "absolute",
-          top: "20px", // Place heading at the top
           textAlign: "center",
           width: "100%",
+          marginBottom: "20px",
         }}
       >
         Leg Press
       </h1>
-
+      <div 
+        style={{
+          display: "flex", // Top row for GIF and Timer
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+          marginBottom: "10px", // Space between top row and feedback
+        }}
+      >
       {/* GIF */}
       <img
         src={benchPressGif}
@@ -42,6 +50,10 @@ const LegPress = () => {
       {/* Timer Widget aligned to the right */}
       <div style={{ marginLeft: "auto" }}>
         <TimerWidget />
+      </div>
+      </div>
+      <div style={{ width: "100%", textAlign: "center" }}>
+        <FeedBack /> 
       </div>
     </div>
   );

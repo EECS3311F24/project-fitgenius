@@ -26,7 +26,7 @@ const FeedBack = () => {
     return (
       <div >
         <h1 className="FeedBack">Feedback</h1>
-        <form onSubmit={handleSubmit} className="handle submit">
+        <form onSubmit={handleSubmit} className="handlesubmit">
           <label className="CommentsFitness">Comments</label>
           <textarea
             value={comment}

@@ -1,31 +1,40 @@
 import React from "react";
 import rowGif from "../assets/Rowing.gif";
 import TimerWidget from "../timer/TimerWidget";
+import FeedBack from "../FeedBack";
 
 const Row = () => {
   return (
     <div
       style={{
         display: "flex",
-        flexDirection: "row",
+        flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
         minHeight: "100vh",
         backgroundColor: "#b3cde0",
         position: "relative",
+        padding: "20px",
       }}
     >
       <h1
         style={{
           fontSize: "3rem", // Larger font size for heading
-          position: "absolute",
-          top: "20px", // Place heading at the top
           textAlign: "center",
           width: "100%",
+          marginBottom: "20px",
         }}
       >
         Row
       </h1>
+      <div 
+        style={{
+          display: "flex", // Top row for GIF and Timer
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+          marginBottom: "10px", // Space between top row and feedback
+        }}
+      >
       <img
         src={rowGif}
         alt="Row"
@@ -39,6 +48,10 @@ const Row = () => {
       {/* Timer Widget aligned to the right */}
       <div style={{ marginLeft: "auto" }}>
         <TimerWidget />
+      </div>
+      </div>
+      <div style={{ width: "100%", textAlign: "center" }}>
+        <FeedBack /> 
       </div>
     </div>
   );

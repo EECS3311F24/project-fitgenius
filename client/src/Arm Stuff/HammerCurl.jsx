@@ -27,27 +27,31 @@ const HammerCurl = () => {
         Hammer Curl
       </h1>
       
-      
       <div 
         style={{
           display: "flex", // Top row for GIF and Timer
           justifyContent: "center",
           alignItems: "center",
           width: "100%",
-          marginBottom: "20px", // Space between top row and feedback
+          marginBottom: "10px", // Space between top row and feedback
         }}
       >
         <img
           src={hammerCurlGif}
           alt="Hammer Curl"
           style={{
-            width: "40%",
+            width: "30%",
             maxWidth: "500px",
             height: "auto",
             marginRight: "20px",
           }}
         />
+        
+        {/*write Code here!!!!!!*/}
+
+        <div style={{ marginLeft: "auto" }}>
         <TimerWidget />
+        </div>
       </div>
       
       {/* Feedback at the bottom */}
