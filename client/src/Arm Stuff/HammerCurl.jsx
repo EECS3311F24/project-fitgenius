@@ -1,44 +1,62 @@
 import React from "react";
 import hammerCurlGif from "../assets/HAM_CURL.gif";
 import TimerWidget from "../timer/TimerWidget";
+import FeedBack from "../FeedBack";
 
 const HammerCurl = () => {
   return (
-    <div
+    <div 
       style={{
         display: "flex",
-        flexDirection: "row",
+        flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
         minHeight: "100vh",
         backgroundColor: "#b3cde0",
         position: "relative",
+        padding: "20px",
       }}
     >
       <h1
         style={{
-          fontSize: "3rem", // Larger font size for heading
-          position: "absolute",
-          top: "20px", // Place heading at the top
+          fontSize: "3rem",
           textAlign: "center",
           width: "100%",
+          marginBottom: "20px",
         }}
       >
         Hammer Curl
       </h1>
-      <img
-        src={hammerCurlGif}
-        alt="Hammer Curl"
+      
+      <div 
         style={{
-          width: "30%", // Controls the width of the GIF
-          maxWidth: "500px", // Max width for the GIF
-          height: "auto", // Maintain aspect ratio
-          marginRight: "20px", // Add space between the GIF and TimerWidget
+          display: "flex", // Top row for GIF and Timer
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+          marginBottom: "10px", // Space between top row and feedback
         }}
-      />
-      {/* Timer Widget aligned to the right */}
-      <div style={{ marginLeft: "auto" }}>
+      >
+        <img
+          src={hammerCurlGif}
+          alt="Hammer Curl"
+          style={{
+            width: "30%",
+            maxWidth: "500px",
+            height: "auto",
+            marginRight: "20px",
+          }}
+        />
+        
+        {/*write Code here!!!!!!*/}
+
+        <div style={{ marginLeft: "auto" }}>
         <TimerWidget />
+        </div>
+      </div>
+      
+      {/* Feedback at the bottom */}
+      <div style={{ width: "100%", textAlign: "center" }}>
+        <FeedBack /> 
       </div>
     </div>
   );

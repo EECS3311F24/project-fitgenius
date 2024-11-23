@@ -1,32 +1,40 @@
 import React from "react";
 import overheadTricepExtensionGif from "../assets/OVER_TRI_EXT.gif";
 import TimerWidget from "../timer/TimerWidget";
+import FeedBack from "../FeedBack";
 
 const OverheadTricepExtension = () => {
   return (
     <div
       style={{
         display: "flex",
-        flexDirection: "row",
+        flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
         minHeight: "100vh",
         backgroundColor: "#b3cde0",
         position: "relative",
+        padding: "20px",
       }}
     >
       <h1
         style={{
           fontSize: "3rem", // Larger font size for heading
-          position: "absolute",
-          top: "20px", // Place heading at the top
           textAlign: "center",
           width: "100%",
-          paddingRight: "100px",
+          marginBottom: "20px",
         }}
       >
         Overhead Tricep Extension
       </h1>
+      <div 
+        style={{
+          display: "flex", // Top row for GIF and Timer
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+          marginBottom: "10px", // Space between top row and feedback
+        }}
+      >
       <img
         src={overheadTricepExtensionGif}
         alt="Overhead Tricep Extension"
@@ -40,6 +48,10 @@ const OverheadTricepExtension = () => {
       {/* Timer Widget aligned to the right */}
       <div style={{ marginLeft: "auto" }}>
         <TimerWidget />
+      </div>
+      </div>
+      <div style={{ width: "100%", textAlign: "center" }}>
+        <FeedBack /> 
       </div>
     </div>
   );
