@@ -30,16 +30,16 @@
 ## Sam Lee
 
 ### 1. What did you work on since the last standup?
-- 
+- After planning the features we needed to work on, I created a feedback form form which I committed.
 
 ### 2. What do you commit to next?
-- 
+- Next, I will work on the submit and delete buttons for the feedback form.
 
 ### 3. When do you think you'll be done?
-- 
+- I will be able to finish in a day or two.
 
 ### 4. Do you have any blockers?
-- 
+- I have an assignment due this Friday.
 
 ## Davit Piruzyan
 
