@@ -31,16 +31,16 @@
 ## Sam Lee
 
 ### 1. What did you work on since the last standup?
-- 
+- Since our last meeting, I have completed implementing the submit and delete buttons for the feedback form. As of last week, the feedback feature for the exercises is fully finished.
 
 ### 2. What do you commit to next?
-- 
+- I have completed my assigned subtasks and will reach out to the team for assistance if needed. For now, I will focus on updating the Trello board.
 
 ### 3. When do you think you'll be done?
-- 
+- I expect to finish updating the Trello board within a couple of days.
 
 ### 4. Do you have any blockers?
-- 
+- I have two assignments due this week and another assignment due next week.
 
 ## Davit Piruzyan
 
