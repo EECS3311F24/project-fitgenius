@@ -1,26 +1,19 @@
 import express from "express";
-
-// This will help us connect to the database
 import db from "../db/connection.js";
-
-// This help convert the id from string to ObjectId for the _id.
 import { ObjectId } from "mongodb";
 
-// router is an instance of the express router.
-// We use it to define our routes.
-// The router will be added as a middleware and will take control of requests starting with path /record.
 const router = express.Router();
 
-// This section will help you get a list of all the records.
-router.get("/", async (req, res) => {
-  let collection = await db.collection("records");
+// Get list of all plans
+router.get("/plans", async (req, res) => {
+  let collection = await db.collection("plans");
   let results = await collection.find({}).toArray();
   res.send(results).status(200);
 });
 
-// This section will help you get a single record by id
-router.get("/:id", async (req, res) => {
-  let collection = await db.collection("records");
+// Get a single plan by id
+router.get("/plans/:id", async (req, res) => {
+  let collection = await db.collection("plans");
   let query = { _id: new ObjectId(req.params.id) };
   let result = await collection.findOne(query);
 
@@ -28,8 +21,8 @@ router.get("/:id", async (req, res) => {
   else res.send(result).status(200);
 });
 
-// This section will help you create a new record.
-router.post("/", async (req, res) => {
+// Post a new plan
+router.post("/plans", async (req, res) => {
   try {
     let newDocument = {
       leg: req.body.leg,
@@ -37,7 +30,7 @@ router.post("/", async (req, res) => {
       chest: req.body.chest,
       back: req.body.back,
     };
-    let collection = await db.collection("records");
+    let collection = await db.collection("plans");
     let result = await collection.insertOne(newDocument);
     res.send(result).status(204);
   } catch (err) {
@@ -46,8 +39,8 @@ router.post("/", async (req, res) => {
   }
 });
 
-// This section will help you update a record by id.
-router.patch("/:id", async (req, res) => {
+// Update an existing plan
+router.patch("/plans/:id", async (req, res) => {
   try {
     const query = { _id: new ObjectId(req.params.id) };
     const updates = {
@@ -59,7 +52,7 @@ router.patch("/:id", async (req, res) => {
       },
     };
 
-    let collection = await db.collection("records");
+    let collection = await db.collection("plans");
     let result = await collection.updateOne(query, updates);
     res.send(result).status(200);
   } catch (err) {
@@ -68,12 +61,12 @@ router.patch("/:id", async (req, res) => {
   }
 });
 
-// This section will help you delete a record
-router.delete("/:id", async (req, res) => {
+// Delete a plan
+router.delete("/plans/:id", async (req, res) => {
   try {
     const query = { _id: new ObjectId(req.params.id) };
 
-    const collection = db.collection("records");
+    const collection = db.collection("plans");
     let result = await collection.deleteOne(query);
 
     res.send(result).status(200);

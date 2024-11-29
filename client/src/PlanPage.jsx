@@ -133,7 +133,7 @@ function PlanPage() {
         };
 
         try {
-            response = await fetch("http://localhost:5050/record", {
+            response = await fetch("http://localhost:5050/record/plans", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
