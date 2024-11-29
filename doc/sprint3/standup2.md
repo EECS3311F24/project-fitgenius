@@ -1,18 +1,18 @@
-# Nov 20th 2024 - Sprint 3 Standup 1
+# Nov 25th 2024 - Sprint 3 Standup 2
 
 ## Sheraz Saeed
 
 ### 1. What did you work on since the last standup?
-- We planned on what features we need to work on this sprint during the sprint planning meeting. I reviewed any bugs or missing functionality that may have resulted from last sprint and proposed to complete that in this sprint.
+- Since our last meeting, I worked with Ayaan and added expertise level implementation to Arm and Chest exercises.
 
 ### 2. What do you commit to next?
-- Next I commit to docummenting our meetings in the repository for future reference while other team members complete their committed tasks. 
+- Next I commit to working on user story 17, figuring out how to add additional beginner instructions to the exercises. 
   
 ### 3. When do you think you'll be done?
-- I should complete this in a couple of days. 
+- I should complete this in a couple of days or thursday by the latest. 
 
 ### 4. Do you have any blockers?
-- Currently, I do not have any blockers.
+- I have a midterm on Tuesday, the 26th of November, after that I will be able to finish my tasks.
 
 ## Brandon Ngo
 
@@ -27,19 +27,20 @@
 
 ### 4. Do you have any blockers?
 - 
+
 ## Sam Lee
 
 ### 1. What did you work on since the last standup?
-- After planning the features we needed to work on, I created a feedback form form which I committed.
+- Since our last meeting, I have completed implementing the submit and delete buttons for the feedback form. As of last week, the feedback feature for the exercises is fully finished.
 
 ### 2. What do you commit to next?
-- Next, I will work on the submit and delete buttons for the feedback form.
+- I have completed my assigned subtasks and will reach out to the team for assistance if needed. For now, I will focus on updating the Trello board.
 
 ### 3. When do you think you'll be done?
-- I will be able to finish in a day or two.
+- I expect to finish updating the Trello board within a couple of days.
 
 ### 4. Do you have any blockers?
-- I have an assignment due this Friday.
+- I have two assignments due this week and another assignment due next week.
 
 ## Davit Piruzyan
 
