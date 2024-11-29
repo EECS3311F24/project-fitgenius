@@ -234,3 +234,21 @@ textarea{
 .listcomments{
   text-align: left;
 }
+
+.InstructionsButton {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  background-color: #37a859;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  white-space: normal;
+  width: auto;
+  min-width: none;
+  width: auto;
+  display: inline-block;
+
+}
