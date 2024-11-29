@@ -5,13 +5,13 @@ main {
     margin: 0 auto;
     padding: 50px;
     text-align: center;
-    background-color: rgb(20, 33, 61);
+    background-color: #034efc;
     color:  rgb(20, 33, 61);
 }
 
 button {
     background-color: transparent;
-    color:  rgb(234, 63, 63);
+    color:  rgb(255, 255, 255);
     border: 0;
     display: inline-block;
     width: 100px;
