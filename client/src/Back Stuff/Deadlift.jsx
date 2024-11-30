@@ -227,7 +227,7 @@ const DeadLift = () => {
 
       {/* Feedback Section */}
       <div style={{ width: "100%", textAlign: "center" }}>
-        <FeedBack />
+        <FeedBack exercise="deadlift" />
       </div>
     </div>
   );

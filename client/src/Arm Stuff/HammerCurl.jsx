@@ -151,7 +151,7 @@ const HammerCurl = () => {
 
       {/* Feedback Section */}
       <div style={{ width: "100%", textAlign: "center" }}>
-        <FeedBack />
+        <FeedBack exercise="hammer-curl" />
       </div>
     </div>
   );

@@ -1,28 +1,73 @@
-import React, {useState} from "react";
-const FeedBack = () => {
+import React, { useState, useEffect } from "react";
+
+function FeedBack({ exercise }) {
     const [comment, setComment] = useState('');
     const [comments, setComments] = useState([]);
+
+    useEffect(() => {
+      reloadComments();
+    }, [exercise]);
   
     const handleCommentChange = (e) => {
       setComment(e.target.value);
     };
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      if (comment.trim()) {
-        setComments([...comments, comment]);
-        setComment(''); 
+
+    async function reloadComments() {
+      const response = await fetch(`http://localhost:5050/record/comments/${exercise}`);
+
+      if (!response.ok) {
+          const message = `An error has occurred: ${response.statusText}`;
+          console.error(message);
+          return;
       }
+
+      let retrievedComments = await response.json();
+      retrievedComments = retrievedComments.map(comment => comment.text);
+      setComments(retrievedComments);
+    }
+  
+    async function handleSubmit(e) {
+      e.preventDefault();
+
+      const newComment = {
+        exercise: exercise,
+        text: comment,
+      };
+
+      try {
+          response = await fetch("http://localhost:5050/record/comments", {
+              method: "POST",
+              headers: {
+                  "Content-Type": "application/json",
+              },
+              body: JSON.stringify(newComment),
+          });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+      } catch (error) {
+        console.error('A problem occurred with your fetch operation: ', error);
+      }
+
+      setComment('');
+      reloadComments();
     };
 
-    const handleDelete = (index) => {
-      if (comments.length > 0) {
-        const updatedComments = [...comments];
-        updatedComments.pop();
-        setComments(updatedComments);
+    async function handleDelete() {
+      const response = await fetch(`http://localhost:5050/record/comments/${exercise}`, {
+        method: "DELETE",
+      });
+
+      if (!response.ok) {
+          const message = `An error occurred while deleting: ${response.statusText}`;
+          console.error(message);
+          return;
       }
+
+      reloadComments();
     };
-  
+
     return (
       <div >
         <h1 className="FeedBack">Feedback</h1>

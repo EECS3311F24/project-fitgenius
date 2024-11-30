@@ -146,7 +146,7 @@ const ParallelBarDip = () => {
 
       {/* Feedback Section */}
       <div style={{ width: "100%", textAlign: "center" }}>
-        <FeedBack />
+        <FeedBack exercise="parallel-bar-dips" />
       </div>
     </div>
   );

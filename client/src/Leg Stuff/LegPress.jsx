@@ -160,7 +160,7 @@ const LegPress = () => {
 
       {/* Feedback Section */}
       <div style={{ width: "100%", textAlign: "center" }}>
-        <FeedBack />
+        <FeedBack exercise="leg-press" />
       </div>
     </div>
   );
