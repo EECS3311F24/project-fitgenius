@@ -125,7 +125,7 @@ function PlanPage() {
     async function savePlan(e) {
         e.preventDefault();
 
-        const person = {
+        const plan = {
             leg: selectedLegOptions[0].label,
             arm: selectedArmOptions[0].label,
             chest: selectedChestOptions[0].label,
@@ -138,16 +138,16 @@ function PlanPage() {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify(person),
+                body: JSON.stringify(plan),
             });
 
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
+          if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+          }
         } catch (error) {
-        console.error('A problem occurred with your fetch operation: ', error);
+          console.error('A problem occurred with your fetch operation: ', error);
         }
-    }
+      }
 
   return (
     <div className="PlanPage">
