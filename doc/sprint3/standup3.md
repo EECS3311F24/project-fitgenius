@@ -1,0 +1,71 @@
+# Nov 29th 2024 - Sprint 3 Standup 3
+
+## Sheraz Saeed
+
+### 1. What did you work on since the last standup?
+- Since our last meeting, I worked on adding an instructions button to Leg, Chest and Arm exercises that when clicked would show a detailed breakdown of how to perform the exercise effectively.
+
+### 2. What do you commit to next?
+- Next I commit to making sure all of the documentation on the repository is updated and finished according to the requirements. 
+  
+### 3. When do you think you'll be done?
+- I should be able to complete this by the deadline. 
+
+### 4. Do you have any blockers?
+- I have another project deadline for another course, but I should be done with my work in time.
+
+## Brandon Ngo
+
+### 1. What did you work on since the last standup?
+- 
+
+### 2. What do you commit to next?
+- 
+  
+### 3. When do you think you'll be done?
+- 
+
+### 4. Do you have any blockers?
+- 
+
+## Sam Lee
+
+### 1. What did you work on since the last standup?
+-
+
+### 2. What do you commit to next?
+- 
+
+### 3. When do you think you'll be done?
+- 
+
+### 4. Do you have any blockers?
+- 
+
+## Davit Piruzyan
+
+### 1. What did you work on since the last standup?
+- 
+
+### 2. What do you commit to next?
+- 
+  
+### 3. When do you think you'll be done?
+- 
+
+### 4. Do you have any blockers?
+- 
+
+## Ayaan Mohammed
+
+### 1. What did you work on since the last standup?
+-   
+
+### 2. What do you commit to next?
+-   
+
+### 3. When do you think you'll be done?
+- 
+
+### 4. Do you have any blockers?
+- 
