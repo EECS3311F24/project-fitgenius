@@ -59,13 +59,13 @@
 ## Ayaan Mohammed
 
 ### 1. What did you work on since the last standup?
--   
+-   I worked on figuring out how to add toggle buttons that displays sets n reps for selected button (beginner, intermediate or expert). Added it to all 4 leg excercises. 
 
 ### 2. What do you commit to next?
--   
+-   I am going to work on schedule.pdf and burdown.pdf for the next few days.
 
 ### 3. When do you think you'll be done?
-- 
+- By Saturday latest.
 
 ### 4. Do you have any blockers?
-- 
+- Couple assignments and quizzes from other classes due this week.
