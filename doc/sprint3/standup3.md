@@ -31,16 +31,16 @@
 ## Sam Lee
 
 ### 1. What did you work on since the last standup?
--
+- Since our last meeting, I have been working on Trello because I finished my subtasks last week.
 
 ### 2. What do you commit to next?
-- 
+- We plan on recording the video.
 
 ### 3. When do you think you'll be done?
-- 
+- We should be able to finish within one or two days.
 
 ### 4. Do you have any blockers?
-- 
+- I have two assignments due next week, but I should still be able to participate in the video
 
 ## Davit Piruzyan
 
