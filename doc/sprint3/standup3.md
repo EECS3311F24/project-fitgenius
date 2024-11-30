@@ -17,16 +17,16 @@
 ## Brandon Ngo
 
 ### 1. What did you work on since the last standup?
-- 
+- Since the last standup I worked on implementing the backend for feedback comments as intended.
 
 ### 2. What do you commit to next?
-- 
+- Next I will commit to reviewing the two tasks I've completed to improve on them if possible.
   
 ### 3. When do you think you'll be done?
-- 
+- Not entirely sure because it depends on if there are changes to be made or not.
 
 ### 4. Do you have any blockers?
-- 
+- No I do not have any blockers currently.
 
 ## Sam Lee
 

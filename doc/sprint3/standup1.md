@@ -17,16 +17,17 @@
 ## Brandon Ngo
 
 ### 1. What did you work on since the last standup?
-- 
+- Since the sprint planning meeting, I looked into the best ways to complete the backend tasks assigned.
 
 ### 2. What do you commit to next?
-- 
+- I will commit to my task of implementing the ability to delete saved workout plans first.
   
 ### 3. When do you think you'll be done?
-- 
+- Hopefully in 2-3 days given nothing unexpected happens.
 
 ### 4. Do you have any blockers?
-- 
+- No, I chose to work on this task first because there will be blockers if I do the other task first.
+
 ## Sam Lee
 
 ### 1. What did you work on since the last standup?

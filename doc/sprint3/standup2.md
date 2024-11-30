@@ -17,16 +17,16 @@
 ## Brandon Ngo
 
 ### 1. What did you work on since the last standup?
-- 
+- Since the last standup meeting I worked on implementing the ability to delete saved plans as intended.
 
 ### 2. What do you commit to next?
-- 
+- Next I will commit to implementing the backend for feedback comments.
   
 ### 3. When do you think you'll be done?
-- 
+- Maybe in 2-3 days given no major blockers occur.
 
 ### 4. Do you have any blockers?
-- 
+- I do not have any blockers currently.
 
 ## Sam Lee
 
