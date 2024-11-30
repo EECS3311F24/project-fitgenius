@@ -76,4 +76,52 @@ router.delete("/plans/:id", async (req, res) => {
   }
 });
 
+// Post a new comment
+router.post("/comments", async (req, res) => {
+  try {
+    let newDocument = {
+      exercise: req.body.exercise,
+      text: req.body.text,
+    };
+    let collection = await db.collection("comments");
+    let result = await collection.insertOne(newDocument);
+    res.send(result).status(204);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Error adding comment");
+  }
+});
+
+// Get all comments for a specific exercise
+router.get("/comments/:exercise", async (req, res) => {
+  try {
+    let collection = await db.collection("comments");
+    let results = await collection.find({ exercise: req.params.exercise }).toArray();
+    res.send(results).status(200);
+  } catch(err) {
+    console.error(err);
+    res.status(500).send("Error retrieving comments");
+  }
+});
+
+// Delete most recent comment
+router.delete("/comments/:exercise", async (req, res) => {
+  try {
+    const collection = db.collection("comments");
+
+    const mostRecentComment = await collection
+      .find({ exercise: req.params.exercise })
+      .sort({ _id: -1 })
+      .limit(1)
+      .toArray();
+
+    let result = await collection.deleteOne({ _id: mostRecentComment[0]._id });
+
+    res.send(result).status(200);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Error deleting most recent comment");
+  }
+});
+
 export default router;

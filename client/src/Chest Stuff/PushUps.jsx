@@ -153,7 +153,7 @@ const PushUps = () => {
 
       {/* Feedback Section */}
       <div style={{ width: "100%", textAlign: "center" }}>
-        <FeedBack />
+        <FeedBack exercise="pushups" />
       </div>
     </div>
   );
