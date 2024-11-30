@@ -59,13 +59,13 @@
 ## Ayaan Mohammed
 
 ### 1. What did you work on since the last standup?
--   
+-   During sprint planning, we aligned on tasks, and I began exploring how to create buttons and implement basic click functionality.
 
 ### 2. What do you commit to next?
--   
+-   I’ll make the buttons functional so that clicking them displays the corresponding sets and reps for Beginner, Intermediate, and Expert.
 
 ### 3. When do you think you'll be done?
-- 
+- By the end of this week.
 
 ### 4. Do you have any blockers?
-- 
+- I need to learn how to implement click events and dynamically display information. Guidance or resources would be helpful. Will look into it.
