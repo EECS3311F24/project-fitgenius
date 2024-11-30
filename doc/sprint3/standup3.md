@@ -59,13 +59,13 @@
 ## Ayaan Mohammed
 
 ### 1. What did you work on since the last standup?
--   
+-   I worked on burndown.pdf and schedule.pdf since the last standup and I completed that. Just final touches left and showing it to my team to get their feedback and will make any changes if needed.
 
 ### 2. What do you commit to next?
--   
+-   Making sure we meet all requirements on the rubric and making sure everything is going well with everyone and helping anyone if needed.
 
 ### 3. When do you think you'll be done?
-- 
+- We should be done by Sunday Afternoon.
 
 ### 4. Do you have any blockers?
-- 
+- Exams coming up and 2 assignments due this week. But I have time to help anyone if needed.
