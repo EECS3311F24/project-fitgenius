@@ -45,16 +45,16 @@
 ## Davit Piruzyan
 
 ### 1. What did you work on since the last standup?
-- 
+- Firstly, I added expertise levels to back exercises, showing the recommended sets and reps for each difficuly level in each exercise, secondly I worked on the System Design Document for sprint 3.
 
 ### 2. What do you commit to next?
-- 
+- We plan on recording the video.
   
 ### 3. When do you think you'll be done?
-- 
+- We should be able to finish by Sunday afternoon, once all the group members are free to get on a call.
 
 ### 4. Do you have any blockers?
-- 
+- 4 big assignments, and exams coming up, but will make sure this those not have negative affects on the group and on the work that needs to be finished.
 
 ## Ayaan Mohammed
 
