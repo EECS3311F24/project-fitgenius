@@ -45,16 +45,16 @@
 ## Davit Piruzyan
 
 ### 1. What did you work on since the last standup?
-- 
+- The Software design document.
 
 ### 2. What do you commit to next?
-- 
+- I will review some code and add some functionality hopefully like (the display for the number of sets and reps for the back exercises)
   
 ### 3. When do you think you'll be done?
-- 
+- By the deadline, latest saturday.
 
 ### 4. Do you have any blockers?
-- 
+- a few exams, but should be good for the deadline.
 
 ## Ayaan Mohammed
 
