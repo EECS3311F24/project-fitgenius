@@ -45,16 +45,16 @@
 ## Davit Piruzyan
 
 ### 1. What did you work on since the last standup?
-- 
+- We were mostly planning and debating on what we should add an focus on more. I worked on creating buttons and some basic functionality.
 
 ### 2. What do you commit to next?
-- 
+- I want to implement the CRC cards and learn what new classes were made by my group members so I can make CRC cards for those too.
   
 ### 3. When do you think you'll be done?
-- 
+- By the end of the week
 
 ### 4. Do you have any blockers?
-- 
+- I have heavy training shchedule this week and some big assignments.
 
 ## Ayaan Mohammed
 
